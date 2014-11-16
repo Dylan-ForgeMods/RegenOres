@@ -121,8 +121,8 @@ public class RegenOres_Main {
 				e.world.setBlock(e.x,e.y,e.z,dormantGold);
 			}else if(e.block.equals(Blocks.iron_ore)){
 				e.world.setBlock(e.x,e.y,e.z,dormantIron);
-			}else if(e.block.equals(Blocks.redstone_ore)){ // For some reason redstone doesn't work
-				e.world.setBlock(e.x,e.y,e.z,dormantRedstone); // Looking into it ;)
+			}else if(e.block.equals(Blocks.redstone_ore)|| e.block.equals(Blocks.lit_redstone_ore)){
+				e.world.setBlock(e.x,e.y,e.z,dormantRedstone);
 			}else if(e.block.equals(Blocks.quartz_ore)){
 				e.world.setBlock(e.x,e.y,e.z,dormantQuartz);
 			}
