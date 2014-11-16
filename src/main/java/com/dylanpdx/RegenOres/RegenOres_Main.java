@@ -84,25 +84,25 @@ public class RegenOres_Main {
 		// if we break a block
 		
 		// Making all blocks unbreakable and random ticking. Also registering them
-		dormantCoal = new dormantCoal_block().setBlockUnbreakable().setBlockTextureName("regen_ores:dormant_coal_ore").setTickRandomly(true).setBlockName("dormantcoal");
+		dormantCoal = new dormantCoal_block().setHardness(10F).setBlockTextureName("regen_ores:dormant_coal_ore").setTickRandomly(true).setBlockName("dormantcoal");
 		GameRegistry.registerBlock(dormantCoal, "DormantCoal");
 		
-		dormantDiamond = new dormantDiamond_block().setBlockUnbreakable().setBlockTextureName("regen_ores:dormant_diamond_ore").setTickRandomly(true).setBlockName("dormantdiamond");
+		dormantDiamond = new dormantDiamond_block().setHardness(10F).setBlockTextureName("regen_ores:dormant_diamond_ore").setTickRandomly(true).setBlockName("dormantdiamond");
 		GameRegistry.registerBlock(dormantDiamond, "DormantDiamond");
 		
-		dormantEmerald = new dormantEmerald_block().setBlockUnbreakable().setBlockTextureName("regen_ores:dormant_emerald_ore").setTickRandomly(true).setBlockName("dormantemerald");
+		dormantEmerald = new dormantEmerald_block().setHardness(10F).setBlockTextureName("regen_ores:dormant_emerald_ore").setTickRandomly(true).setBlockName("dormantemerald");
 		GameRegistry.registerBlock(dormantEmerald, "DormantEmerald");
 		
-		dormantGold = new dormantGold_block().setBlockUnbreakable().setBlockTextureName("regen_ores:dormant_gold_ore").setTickRandomly(true).setBlockName("dormantgold");
+		dormantGold = new dormantGold_block().setHardness(10F).setBlockTextureName("regen_ores:dormant_gold_ore").setTickRandomly(true).setBlockName("dormantgold");
 		GameRegistry.registerBlock(dormantGold, "DormantGold");
 		
-		dormantIron = new dormantIron_block().setBlockUnbreakable().setBlockTextureName("regen_ores:dormant_iron_ore").setTickRandomly(true).setBlockName("dormantiron");
+		dormantIron = new dormantIron_block().setHardness(10F).setBlockTextureName("regen_ores:dormant_iron_ore").setTickRandomly(true).setBlockName("dormantiron");
 		GameRegistry.registerBlock(dormantIron, "DormantIron");
 		
-		dormantQuartz = new dormantQuartz_block().setBlockUnbreakable().setBlockTextureName("regen_ores:dormant_quartz_ore").setTickRandomly(true).setBlockName("dormantquartz");
+		dormantQuartz = new dormantQuartz_block().setHardness(10F).setBlockTextureName("regen_ores:dormant_quartz_ore").setTickRandomly(true).setBlockName("dormantquartz");
 		GameRegistry.registerBlock(dormantQuartz, "DormantQuartz");
 		
-		dormantRedstone = new dormantRedstone_block().setBlockUnbreakable().setBlockTextureName("regen_ores:dormant_redstone_ore").setTickRandomly(true).setBlockName("dormandredstone");
+		dormantRedstone = new dormantRedstone_block().setHardness(10F).setBlockTextureName("regen_ores:dormant_redstone_ore").setTickRandomly(true).setBlockName("dormandredstone");
 		GameRegistry.registerBlock(dormantRedstone, "DormantRedstone");
 	}
 	
