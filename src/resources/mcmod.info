@@ -1,0 +1,9 @@
+[
+{
+	"modid": "regen_ores_revival",
+	"name": "Regen Ores Revival",
+	"description": "Dormant ores that grow back!",
+	"mcversion": "1.8.9",
+	"authorList": ["DanilaFe", "dylanpdx"]
+}
+]
