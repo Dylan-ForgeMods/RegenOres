@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "regen_ores_revival:dormant_ore" }
+    }
+}
