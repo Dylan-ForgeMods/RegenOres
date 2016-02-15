@@ -38,8 +38,6 @@ public class DormantOre extends BlockContainer {
 	public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
 		super.updateTick(worldIn, pos, state, rand);
 		
-		System.out.println("UPDATE!");
-		
 		DormantOreTileEntity tileEntity = (DormantOreTileEntity) worldIn.getTileEntity(pos);
 		Block toSet = GameRegistry.findBlock(tileEntity.getBlockId().substring(0, tileEntity.getBlockId().indexOf(':')), tileEntity.getBlockId().substring(tileEntity.getBlockId().indexOf(':') + 1));
 		worldIn.setBlockState(pos, toSet.getDefaultState());
