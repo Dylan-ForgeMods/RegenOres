@@ -43,8 +43,8 @@ public class RegenOres {
 		GameRegistry.registerBlock(dormantOre, "dormantOre");
 
 		config = new Configuration(event.getSuggestedConfigurationFile());
-		int    rate   = config.get(Configuration.CATEGORY_GENERAL, "TickRate", 10, "How many random ticks it takes for the ore to regenerate.").getInt();
-		double chance = config.get(Configuration.CATEGORY_GENERAL, "SuccessChance", 1F, "The success chance, between 0 and 1. 1 means 100% success chance, 0 means 0%").getDouble();	
+		int    rate   = config.get(Configuration.CATEGORY_GENERAL, "TickRate", 20, "How many random ticks it takes for the ore to regenerate.").getInt();
+		double chance = config.get(Configuration.CATEGORY_GENERAL, "SuccessChance", 1F / 100, "The success chance, between 0 and 1. 1 means 100% success chance, 0 means 0%").getDouble();	
 		if(config.hasChanged()) config.save();
 		
 		((DormantOre) dormantOre).setSuccessChance(chance);
