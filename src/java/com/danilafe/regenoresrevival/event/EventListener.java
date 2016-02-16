@@ -25,7 +25,14 @@ public class EventListener {
 		String registryName = event.state.getBlock().getRegistryName();
 		String oreName = event.state.getBlock().getUnlocalizedName();
 		oreName = oreName.substring(oreName.indexOf('.') + 1);
-		for(String on : oreNames) if(on.toLowerCase().contains("ore") && on.equals(oreName)) isOre = true;
+		if(oreName.contains(":")) oreName = oreName.substring(oreName.indexOf(':') + 1);
+		
+		for(String on : oreNames) {
+			System.out.println(on);
+			if(on.toLowerCase().contains("ore") && on.equals(oreName)) {
+				isOre = true;
+			}
+		}
 		
 		if(!isOre) return;
 		

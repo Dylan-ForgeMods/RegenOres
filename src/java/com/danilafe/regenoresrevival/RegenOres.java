@@ -23,7 +23,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class RegenOres {
 
 	public static final String MODID = "regen_ores_revival";
-	public static final String VERSION = "v0.1";
+	public static final String VERSION = "v0.2";
 	
 	@SidedProxy(clientSide="com.danilafe.regenoresrevival.proxies.ClientProxy", serverSide="com.danilafe.regenoresrevival.proxies.ServerProxy")
 	public static CommonProxy proxy;
